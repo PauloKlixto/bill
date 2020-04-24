@@ -1,12 +1,15 @@
 <template>
-  <main class="Payment">
+  <main class="Bill">
     <h1>Teste {{ value }}</h1>
-    <div v-for="item in products" :key="item.id">
+    <div class="Bill__cards" v-for="item in products" :key="item.id">
       <img :src="productImage(item.image)" />
       <h2>{{ item.name }}</h2>
       <span>{{ item.value }}</span>
       <BaseButton label="Sell" @click="prependValue(item.model)" />
-      <input v-model="form[item.model]" />
+      <input
+        v-model="form[item.model]"
+        @input="changeValue(item.model, $event)"
+      />
       <BaseButton label="Buy" @click="appendValue(item.model)" />
     </div>
   </main>
@@ -76,49 +79,81 @@ export default {
       return require(`@/assets/images/${image}.jpg`)
     },
 
-    //Buy Operation
-    verfifyItemLength(item, quantity) {
-      return this.form[item] < quantity
-    },
     selectedItem(item) {
       return this.products.filter(product => product.model === item)[0]
     },
-    maxLengthForItem(item) {
-      let selectedItem = this.selectedItem(item)
-      return selectedItem.hasQuantityLimit
-        ? this.verfifyItemLength(item, selectedItem.maxQuantity)
-        : true
-    },
 
-    buyOperation(item) {
-      return this.value - this.selectedItem(item).value
-    },
-    isValueIsLessThanZero(item) {
-      return this.buyOperation(item) <= 0
-    },
+    //Buy Operation
     appendValue(item) {
-      if (this.maxLengthForItem(item) && !this.isValueIsLessThanZero(item)) {
-        this.form[item]++
-        this.value = this.buyOperation(item)
-      }
+      this.form[item]++
+      this.changeValue(item)
     },
 
-    //Sell Operation
-    sellOperation(item) {
-      return this.value + this.selectedItem(item).value
-    },
-
+    //Sell Opeation
     prependValue(item) {
       if (this.form[item] > 0) {
         this.form[item]--
-        this.value = this.sellOperation(item)
+        this.changeValue(item)
       }
+    },
+
+    //Input Operation
+    formNumber(i) {
+      return Number(this.form[i])
+    },
+
+    isItemWithLimit(item, i) {
+      if (item.hasQuantityLimit && this.formNumber(i) > item.maxQuantity)
+        this.form[item] = item.maxQuantity
+      this.putValue()
+    },
+
+    deleteOperation(i, event) {
+      if (!!event.inputType && event.inputType === 'deleteContentBackward') {
+        this.form[i] = Math.floor(this.form[i] / 10)
+        return this.putValue()
+      }
+    },
+
+    operatorWhenIsBiggerThanValue(item, i) {
+      this.form[i] = 0
+      this.form[i] = Math.trunc(this.inputsSum() / item.value)
+      this.isItemWithLimit(item, i)
+    },
+
+    //Update Value
+    changeValue(i, event = {}) {
+      let sItem = this.selectedItem(i)
+      if (this.form[i] === '') this.form[i] = 0
+
+      //Delete Operation
+      this.deleteOperation(i, event)
+
+      //Operator is bigger than value
+      return sItem.value * this.formNumber(i) > this.value
+        ? this.operatorWhenIsBiggerThanValue(sItem, i)
+        : this.isItemWithLimit(sItem, i)
+    },
+
+    inputsSum() {
+      let reducedForm = Object.keys(this.form).reduce((arr, key) => {
+        return arr + this.formNumber(key) * this.selectedItem(key).value
+      }, 0)
+      return this.billBudget - reducedForm
+    },
+
+    putValue() {
+      this.value = this.inputsSum()
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.Payment {
+.Bill {
+  display: flex;
+  flex-flow: wrap;
+  &__cards {
+  }
 }
 </style>
