@@ -243,7 +243,7 @@ export default [
     maxQuantity: 0
   },
   {
-    id: '28',
+    id: '281',
     model: 'pizzaShop',
     image: 'pizzaShop',
     name: 'Pizza Shop',
@@ -261,7 +261,7 @@ export default [
     maxQuantity: 0
   },
   {
-    id: '29',
+    id: '289',
     model: 'superbowlAd',
     image: 'superbowlAd',
     name: 'Superbowl Ad',
