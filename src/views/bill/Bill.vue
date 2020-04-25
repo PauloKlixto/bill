@@ -220,7 +220,8 @@ export default {
 
 <style lang="scss" scoped>
 .Bill {
-  width: 950px;
+  max-width: 950px;
+  width: 100vw;
   margin: auto;
   &__billGatesArea {
     height: 260px;
@@ -244,6 +245,12 @@ export default {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    @media (max-width: 950px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 620px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__cards {
     background-color: $color-white;
@@ -309,6 +316,9 @@ export default {
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    @media (max-width: 520px) {
+      grid-template-columns: 1fr;
+    }
     li {
       display: flex;
       align-items: center;
