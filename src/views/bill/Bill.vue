@@ -47,6 +47,7 @@
 import Mask from '@/plugins/mask/Mask'
 import products from './assets/products'
 import { BaseButton, BaseBudget } from '@/components/atoms'
+import { mapState, mapActions } from 'vuex'
 
 export default {
   name: 'Bill',
@@ -96,18 +97,36 @@ export default {
         nbaTeam: 0,
         mblTeam: 0,
         nflTeam: 0
-      },
-      products,
-      billBudget: 90000000000,
-      value: 90000000000
+      }
     }
   },
   computed: {
+    ...mapState({
+      products: state => state.products.products,
+      billBudget: state => state.products.billBudget,
+      value: state => state.products.value
+    }),
+
     filteredProducts() {
       return this.products.filter(item => this.form[item.model] !== 0)
     }
   },
+  mounted() {
+    this.loadData()
+  },
   methods: {
+    ...mapActions({
+      fetchProducts: 'products/fetchProducts',
+      fetchBudget: 'products/fetchBudget',
+      onPutValue: 'products/onPutValue'
+    }),
+
+    //load
+    async loadData() {
+      this.fetchProducts(products)
+      this.fetchBudget(90000000000)
+    },
+
     //Masked values
     maskedValue(value) {
       return Mask.money(value)
@@ -193,7 +212,7 @@ export default {
     },
 
     putValue() {
-      this.value = this.inputsSum()
+      this.onPutValue(this.inputsSum())
     }
   }
 }
