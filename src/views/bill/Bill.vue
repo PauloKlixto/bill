@@ -4,12 +4,12 @@
       <img class="Bill__billPhoto" src="@/assets/images/billGates.png" />
       <h1>Spend Bill Gates' Money</h1>
     </section>
-    <BaseBudget :value="value" />
+    <BaseBudget :value="maskedValue(value)" />
     <section class="Bill__cardsWrapper">
       <div class="Bill__cards" v-for="item in products" :key="item.id">
         <img :src="productImage(item.image)" class="Bill__cardsImage" />
         <h2 class="Bill__cardsTitle">{{ item.name }}</h2>
-        <span class="Bill__cardsValue">{{ item.value }}</span>
+        <span class="Bill__cardsValue">{{ maskedValue(item.value) }}</span>
         <BaseButton
           class="Bill__cardsSell"
           label="Sell"
@@ -44,6 +44,7 @@
 </template>
 
 <script>
+import Mask from '@/plugins/mask/Mask'
 import products from './assets/products'
 import { BaseButton, BaseBudget } from '@/components/atoms'
 
@@ -107,6 +108,10 @@ export default {
     }
   },
   methods: {
+    //Masked values
+    maskedValue(value) {
+      return Mask.money(value)
+    },
     //Image
     productImage(image) {
       return require(`@/assets/images/${image}.jpg`)
@@ -244,6 +249,9 @@ export default {
   }
   &__cardsValue {
     grid-area: value;
+    font-size: 20px;
+    color: rgb(46, 204, 113);
+    font-weight: bold;
   }
   &__cardsSell {
     grid-area: sell;
@@ -279,6 +287,7 @@ export default {
     font-size: 16px;
     font-weight: bold;
     display: grid;
+    gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     li {
