@@ -3,10 +3,6 @@
     <header class="TheHeader__topBar">
       <p>Neal.fun</p>
     </header>
-    <section class="TheHeader__billGatesArea">
-      <img class="TheHeader__billPhoto" src="@/assets/images/billGates.png" />
-      <h1>Spend Bill Gates' Money</h1>
-    </section>
   </section>
 </template>
 
@@ -31,24 +27,6 @@ export default {
       width: 100vw;
       margin: auto;
     }
-  }
-  &__billGatesArea {
-    max-width: 950px;
-    height: 260px;
-    width: 100vw;
-    margin: auto;
-    background: $color-white;
-    display: grid;
-    justify-items: center;
-    gap: 20px;
-    h1 {
-      font-size: 32px;
-      text-align: center;
-    }
-  }
-  &__billPhoto {
-    border-radius: 50%;
-    align-self: flex-end;
   }
 }
 </style>

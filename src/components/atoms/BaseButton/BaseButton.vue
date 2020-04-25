@@ -4,12 +4,14 @@
     type="button"
     v-bind="$attrs"
     class="BaseButton"
+    :class="BaseButtonClasses"
     :disabled="disabled"
     @click="click"
+    :style="BaseButtonStyles"
   >
-    <em v-if="!!label" class="BaseButton__Text">
+    <span v-if="!!label" class="BaseButton__Text">
       {{ label }}
-    </em>
+    </span>
   </component>
 </template>
 
@@ -26,9 +28,26 @@ export default {
       type: String,
       default: ''
     },
+    color: {
+      type: String,
+      default: 'cyan'
+    },
     disabled: {
       type: Boolean,
       default: false
+    }
+  },
+
+  computed: {
+    BaseButtonStyles() {
+      return {
+        backgroundColor: this.color
+      }
+    },
+    BaseButtonClasses() {
+      return {
+        'BaseButton--disabled': this.disabled
+      }
     }
   },
 
@@ -42,31 +61,32 @@ export default {
 
 <style lang="scss" scoped>
 .BaseButton {
-  height: 51px;
-  -webkit-appearance: none;
-  display: flex;
-  background: inherit;
-  padding: 0 10px;
+  font-size: 16px;
   cursor: pointer;
-  align-items: center;
-  position: relative;
-  white-space: nowrap;
-  background: blue;
-  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  user-select: none;
+  padding: 9px 12px;
+  border-radius: 3px;
+
+  &--disabled {
+    pointer-events: none;
+    background-color: rgb(241, 242, 246) !important;
+    color: rgb(51, 51, 51);
+  }
 
   &:hover {
     filter: brightness(90%) contrast(150%);
   }
 
   &__Text {
-    text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 0.001rem;
-    color: white;
     text-align: center;
     display: block;
     width: 100%;
-    font-weight: 600;
+    font-weight: bold;
   }
 }
 </style>

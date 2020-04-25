@@ -1,27 +1,46 @@
 <template>
-  <main class="Bill">
-    <h1>Teste {{ value }}</h1>
-    <div class="Bill__cards" v-for="item in products" :key="item.id">
-      <img :src="productImage(item.image)" />
-      <h2>{{ item.name }}</h2>
-      <span>{{ item.value }}</span>
-      <BaseButton label="Sell" @click="prependValue(item.model)" />
-      <input
-        v-model="form[item.model]"
-        @input="changeValue(item.model, $event)"
-      />
-      <BaseButton label="Buy" @click="appendValue(item.model)" />
-    </div>
-  </main>
+  <section class="Bill">
+    <section class="Bill__billGatesArea">
+      <img class="Bill__billPhoto" src="@/assets/images/billGates.png" />
+      <h1>Spend Bill Gates' Money</h1>
+    </section>
+    <BaseBudget :value="value" />
+    <section class="Bill__cardsWrapper">
+      <div class="Bill__cards" v-for="item in products" :key="item.id">
+        <img :src="productImage(item.image)" class="Bill__cardsImage" />
+        <h2 class="Bill__cardsTitle">{{ item.name }}</h2>
+        <span class="Bill__cardsValue">{{ item.value }}</span>
+        <BaseButton
+          class="Bill__cardsSell"
+          label="Sell"
+          @click="prependValue(item.model)"
+          color="rgb(245, 59, 87)"
+          :disabled="disabledSell(item.model)"
+        />
+        <input
+          class="Bill__cardsInput"
+          v-model="form[item.model]"
+          @input="changeValue(item.model, $event)"
+        />
+        <BaseButton
+          class="Bill__cardsBuy"
+          label="Buy"
+          @click="appendValue(item.model)"
+          :disabled="disabledBuy(item.model)"
+          color="rgb(5, 196, 107"
+        />
+      </div>
+    </section>
+  </section>
 </template>
 
 <script>
 import products from './assets/products'
-import { BaseButton } from '@/components/atoms'
+import { BaseButton, BaseBudget } from '@/components/atoms'
 
 export default {
   name: 'Bill',
-  components: { BaseButton },
+  components: { BaseButton, BaseBudget },
   data() {
     return {
       form: {
@@ -89,12 +108,24 @@ export default {
       this.changeValue(item)
     },
 
+    disabledBuy(i) {
+      let form = this.formNumber(i),
+        item = this.selectedItem(i)
+      return (
+        item.value * form >= this.value ||
+        (item.hasQuantityLimit && form >= item.maxQuantity)
+      )
+    },
+
     //Sell Opeation
     prependValue(item) {
       if (this.form[item] > 0) {
         this.form[item]--
         this.changeValue(item)
       }
+    },
+    disabledSell(item) {
+      return this.form[item] <= 0
     },
 
     //Input Operation
@@ -104,7 +135,7 @@ export default {
 
     isItemWithLimit(item, i) {
       if (item.hasQuantityLimit && this.formNumber(i) > item.maxQuantity)
-        this.form[item] = item.maxQuantity
+        this.form[i] = item.maxQuantity
       this.putValue()
     },
 
@@ -151,9 +182,67 @@ export default {
 
 <style lang="scss" scoped>
 .Bill {
-  display: flex;
-  flex-flow: wrap;
+  width: 950px;
+  margin: auto;
+  &__billGatesArea {
+    height: 260px;
+    width: 100%;
+    background: $color-white;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    h1 {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+  &__billPhoto {
+    border-radius: 50%;
+    align-self: flex-end;
+  }
+  &__cardsWrapper {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
   &__cards {
+    background-color: $color-white;
+    display: grid;
+    grid-template-columns: 5px 65px 1fr 65px 5px;
+    grid-template-rows: 10px 1fr 20px 30px 40px 10px;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    grid-template-areas:
+      '. . . . .'
+      '. image image image .'
+      '. title title title .'
+      '. value value value .'
+      '. sell input buy .';
+  }
+  &__cardsImage {
+    grid-area: image;
+  }
+  &__cardsTitle {
+    grid-area: title;
+  }
+  &__cardsValue {
+    grid-area: value;
+  }
+  &__cardsSell {
+    grid-area: sell;
+  }
+  &__cardsInput {
+    grid-area: input;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+  }
+  &__cardsBuy {
+    grid-area: buy;
   }
 }
 </style>

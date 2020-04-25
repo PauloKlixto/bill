@@ -1,3 +1,4 @@
 import BaseButton from './BaseButton/BaseButton'
+import BaseBudget from './BaseBudget/BaseBudget'
 
-export { BaseButton }
+export { BaseButton, BaseBudget }
