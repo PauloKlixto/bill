@@ -31,6 +31,15 @@
         />
       </div>
     </section>
+    <section class="Bill__resume" v-show="filteredProducts.length">
+      <h2>Your Shopping Spree</h2>
+      <ul class="Bill__resumeList">
+        <li v-for="item in filteredProducts" :key="`resume${item.id}`">
+          <img :src="productImage(item.image)" />
+          <span>{{ item.name }} x {{ form[item.model] }}</span>
+        </li>
+      </ul>
+    </section>
   </section>
 </template>
 
@@ -90,6 +99,11 @@ export default {
       products,
       billBudget: 90000000000,
       value: 90000000000
+    }
+  },
+  computed: {
+    filteredProducts() {
+      return this.products.filter(item => this.form[item.model] !== 0)
     }
   },
   methods: {
@@ -243,6 +257,39 @@ export default {
   }
   &__cardsBuy {
     grid-area: buy;
+  }
+
+  &__resume {
+    background-color: $color-white;
+    margin: 10px 0;
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      color: $color-green;
+      font-weight: bold;
+      padding: 15px;
+    }
+  }
+
+  &__resumeList {
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    li {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      max-height: 50px;
+      max-width: 50px;
+      margin-right: 7px;
+    }
   }
 }
 </style>
