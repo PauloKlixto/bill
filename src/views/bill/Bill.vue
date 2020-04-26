@@ -157,10 +157,8 @@ export default {
 
     //Sell Opeation
     prependValue(item) {
-      if (this.form[item] > 0) {
-        this.form[item]--
-        this.changeValue(item)
-      }
+      this.form[item]--
+      this.changeValue(item)
     },
     disabledSell(item) {
       return this.form[item] <= 0

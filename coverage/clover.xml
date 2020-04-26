@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1587913384193" clover="3.2.0">
+  <project timestamp="1587913384193" name="All files">
+    <metrics statements="50" coveredstatements="50" conditionals="14" coveredconditionals="14" methods="34" coveredmethods="34" elements="98" coveredelements="98" complexity="0" loc="50" ncloc="50" packages="3" files="5" classes="5"/>
+    <package name="components.atoms.BaseButton">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="BaseButton.vue" path="/Users/paulocalixto/Documents/Projetos/PerfectPay/perfect-pay/src/components/atoms/BaseButton/BaseButton.vue">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="25" count="1600" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="store.modules.products">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+      <file name="actions.products.js" path="/Users/paulocalixto/Documents/Projetos/PerfectPay/perfect-pay/src/store/modules/products/actions.products.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="getters.products.js" path="/Users/paulocalixto/Documents/Projetos/PerfectPay/perfect-pay/src/store/modules/products/getters.products.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="mutations.products.js" path="/Users/paulocalixto/Documents/Projetos/PerfectPay/perfect-pay/src/store/modules/products/mutations.products.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="views.bill">
+      <metrics statements="39" coveredstatements="39" conditionals="14" coveredconditionals="14" methods="24" coveredmethods="24"/>
+      <file name="Bill.vue" path="/Users/paulocalixto/Documents/Projetos/PerfectPay/perfect-pay/src/views/bill/Bill.vue">
+        <metrics statements="39" coveredstatements="39" conditionals="14" coveredconditionals="14" methods="24" coveredmethods="24"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="56" count="10" type="stmt"/>
+        <line num="105" count="10" type="stmt"/>
+        <line num="106" count="6" type="stmt"/>
+        <line num="107" count="10" type="stmt"/>
+        <line num="111" count="731" type="stmt"/>
+        <line num="115" count="10" type="stmt"/>
+        <line num="126" count="10" type="stmt"/>
+        <line num="127" count="10" type="stmt"/>
+        <line num="132" count="817" type="stmt"/>
+        <line num="136" count="802" type="stmt"/>
+        <line num="140" count="50783" type="stmt"/>
+        <line num="145" count="1" type="stmt"/>
+        <line num="146" count="1" type="stmt"/>
+        <line num="150" count="1596" type="stmt"/>
+        <line num="152" count="798" type="cond" truecount="3" falsecount="0"/>
+        <line num="160" count="1" type="stmt"/>
+        <line num="161" count="1" type="stmt"/>
+        <line num="164" count="798" type="stmt"/>
+        <line num="169" count="1181" type="stmt"/>
+        <line num="173" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="175" count="4" type="stmt"/>
+        <line num="179" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="180" count="1" type="stmt"/>
+        <line num="181" count="1" type="stmt"/>
+        <line num="186" count="3" type="stmt"/>
+        <line num="187" count="3" type="stmt"/>
+        <line num="188" count="3" type="stmt"/>
+        <line num="193" count="5" type="stmt"/>
+        <line num="194" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="197" count="5" type="stmt"/>
+        <line num="200" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="206" count="9" type="stmt"/>
+        <line num="207" count="378" type="stmt"/>
+        <line num="209" count="9" type="stmt"/>
+        <line num="213" count="6" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

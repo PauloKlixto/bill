@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bill Componente não alterado 1`] = `
+"<section class=\\"Bill\\">
+  <section class=\\"Bill__billGatesArea\\"><img src=\\"@/assets/images/billGates.png\\" class=\\"Bill__billPhoto\\">
+    <h1>Spend Bill Gates' Money</h1>
+  </section>
+  <basebudget-stub value=\\"$ 100\\"></basebudget-stub>
+  <section class=\\"Bill__cardsWrapper\\">
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Big Mac</h2> <span class=\\"Bill__cardsValue\\">$ 2</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Cup of Coffee</h2> <span class=\\"Bill__cardsValue\\">$ 4</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Book</h2> <span class=\\"Bill__cardsValue\\">$ 15</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Video Game</h2> <span class=\\"Bill__cardsValue\\">$ 60</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Charity</h2> <span class=\\"Bill__cardsValue\\">$ 100</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Headphones</h2> <span class=\\"Bill__cardsValue\\">$ 200</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Air Jordans</h2> <span class=\\"Bill__cardsValue\\">$ 200</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Skateboard</h2> <span class=\\"Bill__cardsValue\\">$ 300</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Smartphone</h2> <span class=\\"Bill__cardsValue\\">$ 600</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Gaming Console</h2> <span class=\\"Bill__cardsValue\\">$ 600</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Bike</h2> <span class=\\"Bill__cardsValue\\">$ 800</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Drone</h2> <span class=\\"Bill__cardsValue\\">$ 800</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Designer Handbag</h2> <span class=\\"Bill__cardsValue\\">$ 1,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Jet Ski</h2> <span class=\\"Bill__cardsValue\\">$ 8,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">4K TV</h2> <span class=\\"Bill__cardsValue\\">$ 10,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Diamond Ring</h2> <span class=\\"Bill__cardsValue\\">$ 10,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Rolex</h2> <span class=\\"Bill__cardsValue\\">$ 15,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Speed Boat</h2> <span class=\\"Bill__cardsValue\\">$ 30,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Food Truck</h2> <span class=\\"Bill__cardsValue\\">$ 50,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Tesla</h2> <span class=\\"Bill__cardsValue\\">$ 70,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Monster Truck</h2> <span class=\\"Bill__cardsValue\\">$ 150,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Helicopter</h2> <span class=\\"Bill__cardsValue\\">$ 175,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Ferrari</h2> <span class=\\"Bill__cardsValue\\">$ 200,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Lamborghini</h2> <span class=\\"Bill__cardsValue\\">$ 200,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Firetruck</h2> <span class=\\"Bill__cardsValue\\">$ 200,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Townhouse</h2> <span class=\\"Bill__cardsValue\\">$ 200,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Bar</h2> <span class=\\"Bill__cardsValue\\">$ 300,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Pizza Shop</h2> <span class=\\"Bill__cardsValue\\">$ 500,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Bar of Gold</h2> <span class=\\"Bill__cardsValue\\">$ 500,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Superbowl Ad</h2> <span class=\\"Bill__cardsValue\\">$ 5,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Beach House</h2> <span class=\\"Bill__cardsValue\\">$ 5,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Yacht</h2> <span class=\\"Bill__cardsValue\\">$ 10,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">F16</h2> <span class=\\"Bill__cardsValue\\">$ 15,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Skyscraper</h2> <span class=\\"Bill__cardsValue\\">$ 50,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Mansion</h2> <span class=\\"Bill__cardsValue\\">$ 50,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Rocket</h2> <span class=\\"Bill__cardsValue\\">$ 60,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Passenger Jet</h2> <span class=\\"Bill__cardsValue\\">$ 150,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Monalisa</h2> <span class=\\"Bill__cardsValue\\">$ 780,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">Cruise Ship</h2> <span class=\\"Bill__cardsValue\\">$ 1,200,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">NBA Team</h2> <span class=\\"Bill__cardsValue\\">$ 1,300,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">MBL Team</h2> <span class=\\"Bill__cardsValue\\">$ 1,500,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+    <div class=\\"Bill__cards\\"><img src=\\"\\" class=\\"Bill__cardsImage\\">
+      <h2 class=\\"Bill__cardsTitle\\">NFL Team</h2> <span class=\\"Bill__cardsValue\\">$ 2,300,000,000</span>
+      <basebutton-stub tag=\\"button\\" label=\\"Sell\\" color=\\"rgb(245, 59, 87)\\" disabled=\\"true\\" class=\\"Bill__cardsSell\\"></basebutton-stub> <input class=\\"Bill__cardsInput\\">
+      <basebutton-stub tag=\\"button\\" label=\\"Buy\\" color=\\"rgb(5, 196, 107\\" class=\\"Bill__cardsBuy\\"></basebutton-stub>
+    </div>
+  </section>
+  <section class=\\"Bill__resume\\" style=\\"display: none;\\">
+    <h2>Your Shopping Spree</h2>
+    <ul class=\\"Bill__resumeList\\"></ul>
+  </section>
+</section>"
+`;

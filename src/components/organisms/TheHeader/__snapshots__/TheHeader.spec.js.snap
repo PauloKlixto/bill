@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheHeader Componente não alterado 1`] = `
+"<section class=\\"TheHeader\\">
+  <header class=\\"TheHeader__topBar\\">
+    <p>Neal.fun</p>
+  </header>
+</section>"
+`;
